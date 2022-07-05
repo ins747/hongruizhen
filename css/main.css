@@ -23,6 +23,9 @@ header, section, footer{
 header, section, footer, div{
     box-sizing: border-box;
 }
+header .sub_link{
+    color: #ff0000;
+}
 img{width: 100%;}
 
 /* 키프레임 애니메이션 */
@@ -157,6 +160,9 @@ header nav .sub li a{
     font-size: 16px;
     padding: 10px;
 }
+header nav .sub li:first-child{
+    color: red;
+}
 header nav .sub li a:hover{
     color: #d63447;
 }
@@ -178,14 +184,14 @@ header .right_menu ul li a{
 header .sub_bg{
     width: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: rgba(255,255,255, 0.9);
     height: 340px;
     top: 100px;
     display: none;
 }
 header.active .sub_bg{
     top: 80px;
-    background-color: rgba(255,255,255, 0.7);
+    background-color: rgba(255,255,255, 0.9);
 }
 /* pc버전에서는 메뉴 버튼 안 보임 */
 header .menu_btn{
@@ -1896,6 +1902,9 @@ footer .top {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    header .mobile_nav .mobile_nav_in nav ul li:first-child{
+        color: red;
     }
     header .mobile_nav .mobile_nav_in nav ul li a i{
         opacity: 1;

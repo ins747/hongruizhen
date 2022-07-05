@@ -1,0 +1,335 @@
+header{
+    background-color: rgba(255, 255,255, 0.9);
+    height: 80px;
+}
+header .logo{
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+}
+header nav{
+    margin-top: 0px;
+}
+header .right_menu {
+    margin-top: 30px;
+}
+header .sub_bg{
+    top: 80px;
+    background-color: rgba(255,255,255, 0.9);
+}
+
+
+.brand_bg{
+    background-attachment: fixed;
+    background-image: url(../img/franchise1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 760px;
+}
+.brand_story {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.brand_story .brand_box{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap; /*행기준 줄바꿈 허용*/
+    justify-content: space-between;
+}
+.brand_story h1{
+    position: absolute;
+    font-size: 70px;
+    top: -60px;
+    left: 0;
+    color: #d63447;
+}
+.brand_story .brand_box > p{
+    position: absolute;
+    color: #d63447;
+    font-size: 18px;
+    font-weight: bold;
+    top: 30px;
+}
+.brand_story .brand_box .brand1{
+    order: 1;
+    width: 35%;
+    margin-top: 250px;
+}
+.brand_story .brand_box .brand2{
+    order: 2;
+    width: 40%;
+    padding: 250px 0;
+    margin-top: 150px;
+}
+.brand_story .brand_box .brand3{
+    order: 3;
+    width: 30%;
+    padding: 100px 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.brand_story .brand_box .brand4{
+    order: 4;
+    width: 60%;
+    margin-top: 100px;
+}
+.brand_story .brand_box h2{
+    font-size: 35px;
+    color: #d63447;
+    line-height: 50px;
+    font-weight: normal;
+}
+.brand_story .brand_box div p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+    margin-top: 40px;
+}
+.brand_story .brand_box p span{
+    font-weight: 500;
+    color: #444;
+}
+
+
+.clip1{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    clip-path: polygon(0% 5%, 95% 0%, 100% 95%, 5% 100%);
+    animation-name: border_ani1;
+    animation-duration: 10s;
+    /* 애니메이션 실행방향 : 반대방향 <-> 순방향 */
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.clip1 img{
+    position: absolute;
+    left: 0;
+}
+@keyframes border_ani1{
+    0%{
+        clip-path: polygon(0% 5%, 95% 0%, 100% 95%, 5% 100%);
+    }
+    25%{
+        clip-path: polygon(7% 5%, 93% 0%, 100% 93%, 3% 80%);
+    }
+    50%{
+        clip-path: polygon(5% 0%, 98% 5%, 95% 90%, 0% 95%);
+        
+    }
+    75%{
+        clip-path: polygon(3% 10%, 88% 3%, 90% 88%, 10% 95%);
+    }
+}
+
+.clip2{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 95%, 5% 88%);
+    animation-name: border_ani1;
+    animation-duration: 10s;
+    /* 애니메이션 실행방향 : 반대방향 <-> 순방향 */
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.clip2 img{
+    position: absolute;
+    right: 0;
+}
+@keyframes border_ani2{
+    0%{
+        clip-path: polygon(5% 0%, 95% 0%, 100% 95%, 5% 88%);
+    }
+    25%{
+        clip-path: polygon(8% 5%, 98% 5%, 95% 90%, 0% 95%);
+    }
+    50%{
+        clip-path: polygon(3% 10%, 93% 0%, 90% 93%, 3% 85%);
+    }
+    75%{
+        clip-path: polygon(10% 3%, 88% 3%, 85% 88%, 10% 90%);
+    }
+}
+
+
+.brand_icon{
+    width: 100%;
+}
+.brand_icon ul{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+.brand_icon ul h1 {
+    font-size: 50px;
+    color: #d63447;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+}
+.brand_icon ul li {
+    width: 30%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 6px solid #96ceb4;
+    padding: 40px 80px;
+}
+.brand_icon ul li p{
+    text-align: center;
+    white-space: pre-wrap;
+    padding-top: 20px;
+}
+
+/* 노트북 */
+@media screen and (max-width:1600px){
+
+
+}
+/* 노트북 */
+@media screen and (max-width:1200px){
+    .brand_bg{
+        height: 550px;
+    }
+    .brand_story .brand_box{
+        width: 90%;
+    }
+    .brand_story .brand_box .brand1{
+        margin-top: 150px;
+    }
+    .brand_story .brand_box .brand2{
+        margin-top: 0px;
+    }
+    .brand_story .brand_box .brand3{
+        margin-top: 50px;
+    }
+    .brand_story .brand_box .brand4{
+        margin-top: 50px;
+    }
+    .brand_story .brand_box h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .brand_icon ul{
+        width: 90%;
+    }
+    .brand_icon ul li{
+        padding: 30px 60px;
+    }
+}
+/* 태블릿 */
+@media screen and (max-width:1024px){
+    .clip1{
+    width: 500px;
+    clip-path: none;
+    animation: none;
+}
+    .clip2{
+        width: 500px;
+        clip-path: none;
+        animation: none;
+    }
+}
+/* 태블릿 */
+@media screen and (max-width:768px){
+    .brand_bg{
+        height: 400px;
+    }
+    .brand_story h1{
+        font-size: 50px;
+        top: -40px;
+    }
+    .brand_story .brand_box{
+        flex-flow:  column nowrap;
+    }
+    .brand_story .brand_box .brand1{
+        order: 1;
+        width: 80%;
+        margin: 100px auto;
+        animation-name: none;
+    }
+    .brand_story .brand_box .brand2{
+        order: 2;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .brand_story .brand_box .brand3{
+        order: 4;
+        width: 80%;
+        margin: 0px auto;
+        padding: 0;
+        margin-bottom: 150px;
+    }
+    .brand_story .brand_box .brand4{
+        order: 3;
+        width: 80%;
+        margin: 100px auto;
+        animation-name: none;
+        padding: 0;
+    }
+    .brand_icon ul h1{
+        font-size: 40px;
+        top: 50px;
+    }
+    .brand_icon ul li{
+        width: 45%;
+        padding: 30px 60px;
+        border: none;
+        border-radius: 20px;
+        margin: 20px 0;
+        background-color: #f8f8f8;
+    }
+}
+/* 모바일 */
+@media screen and (max-width:480px){
+    .brand_bg{
+        height: 300px;
+    }
+    .brand_story h1{
+        font-size: 40px;
+        top: -30px;
+    }
+    .brand_story .brand_box > div {
+        width: 90%;
+    }
+    .brand_icon ul h1{
+        font-size: 30px;
+    }
+    
+    .brand_icon ul li{
+        width: 45%;
+        padding: 40px 30px;
+        margin: 10px 0;
+    }
+    .brand_icon ul li p {
+        font-size: 14px;
+    }
+}
+/* 모바일 */
+@media screen and (max-width:412px){
+    .brand_icon ul h1{
+        font-size: 24px;
+    }
+    .brand_icon ul li{
+        width: 45%;
+        padding: 30px 25px;
+        margin: 10px 0;
+    }
+    .brand_icon ul li p {
+        font-size: 12px;
+    }
+}
+/* 모바일 */
+@media screen and (max-width:360px){
+
+}
