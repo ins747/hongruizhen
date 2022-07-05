@@ -114,9 +114,10 @@ $(function(){
     }
     // swiper slide(pc, 태블릿, 모바일)
     var swiper = new Swiper(".mySwiper", {
-        // autoplay: {
-        //     delay:4000
-        // },
+        autoplay: {
+            delay:4000,
+            disableOnInteraction: false
+        },
         loop:true,
         effect:'fade',
         pagination: {
